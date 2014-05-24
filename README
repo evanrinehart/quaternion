@@ -1,0 +1,30 @@
+Quaternion
+
+http://www.emis.ams.org/classics/Hamilton/OnQuat.pdf  
+
+Q class
+  new          : R, R, R, R -> Q
+  axis_angle   : R3, R -> Q
+  a,b,c,d      : Q -> R
+  +            : Q, Q -> Q
+  -            : Q, Q -> Q
+  *            : Q, Q -> Q
+  neg          : Q -> Q
+  conj         : Q -> Q
+  norm         : Q -> R
+  scale        : Q, R -> Q
+  recip        : NonZero Q -> NonZero Q
+  normalize    : NonZero Q -> NonZero Q
+  zero?        : Q -> Bool
+  vector       : Q -> R3
+  rotate       : Q, R3 -> R3
+  norm_squared : Q -> R
+
+where
+  R  = Float
+  R3 = [R,R,R]
+
+Constants
+  ZERO : Q
+  ONE  : Q
+
